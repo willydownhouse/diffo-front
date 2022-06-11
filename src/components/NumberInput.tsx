@@ -1,5 +1,4 @@
-import { type } from 'os';
-import React, { ChangeEvent, useState } from 'react';
+import React, { ChangeEvent } from 'react';
 
 type NumberInputProps = {
   label: string;

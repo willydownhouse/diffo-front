@@ -12,16 +12,27 @@ function Result({ distanceCost, timeCost, income, profit }: ResultProps) {
     <div>
       <p>
         Total distance costs:{' '}
-        <span className="fw-bold">{distanceCost} euros</span>
+        <span id="distance-cost-result" className="fw-bold">
+          {distanceCost.toFixed(2)} euros
+        </span>
       </p>
       <p>
-        Total time costs: <span className="fw-bold">{timeCost} euros</span>
+        Total time costs:{' '}
+        <span id="time-cost-result" className="fw-bold">
+          {timeCost.toFixed(2)} euros
+        </span>
       </p>
       <p>
-        Income: <span className="fw-bold">{income} euros</span>
+        Income:{' '}
+        <span id="income-result" className="fw-bold">
+          {income.toFixed(2)} euros
+        </span>
       </p>
       <h4>
-        Profit: <span className="fw-bold">{profit} euros</span>
+        Profit:{' '}
+        <span id="profit-result" className="fw-bold">
+          {profit.toFixed(2)} euros
+        </span>
       </h4>
     </div>
   );

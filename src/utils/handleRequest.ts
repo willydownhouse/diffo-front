@@ -1,4 +1,3 @@
-import { AxiosError } from 'axios';
 import offerApi from '../api/offerApi';
 
 export function handleRequest(

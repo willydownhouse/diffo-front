@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import Form from './Form';
+import FormikForm from './FormikForm';
 import Notification from './Notification';
 import Result from './Result';
 
@@ -13,9 +13,9 @@ function App() {
 
   return (
     <div className="container">
-      <h1 className="mb-3">Profit counter</h1>
+      <h1 className="mb-4 mt-2">Profit counter</h1>
       <Notification message={notification} />
-      <Form
+      <FormikForm
         setDistanceCost={setDistanceCost}
         setTimeCost={setTimeCost}
         setIncome={setIncome}

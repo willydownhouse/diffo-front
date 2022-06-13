@@ -2,7 +2,7 @@ import React from 'react';
 import { Formik, Form } from 'formik';
 import MyInputField from './MyInputField';
 import { formSchema, initialValues } from '../utils/formSchema';
-import { handleRequest } from '../utils/handleRequest';
+import { handleCountCostsAndProfitRequest } from '../utils/handleRequest';
 import FormButtons from './FormButtons';
 
 type FormProps = {
@@ -30,7 +30,7 @@ function FormikForm({
     <Formik
       onSubmit={values => {
         const { km, kmPrice, hours, hourPrice, offer } = values;
-        handleRequest(
+        handleCountCostsAndProfitRequest(
           +km,
           +hours,
           +kmPrice,

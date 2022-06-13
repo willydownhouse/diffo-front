@@ -1,6 +1,6 @@
 import offerApi from '../api/offerApi';
 
-export function handleRequest(
+export function handleCountCostsAndProfitRequest(
   kilometers: number,
   hours: number,
   kmPrice: number,
@@ -21,8 +21,6 @@ export function handleRequest(
       offer,
     })
     .then(res => {
-      console.log(res.data);
-
       const { distance_costs, time_costs, offer, profit } = res.data;
 
       setDistanceCost(distance_costs);
